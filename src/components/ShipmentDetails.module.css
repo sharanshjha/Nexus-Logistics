@@ -109,8 +109,23 @@
   background: #f7f7fb;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .card {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
   .fields {
     grid-template-columns: 1fr;
+  }
+
+  .toggleBtn {
+    padding: 10px 12px;
+    font-size: 0.82rem;
   }
 }

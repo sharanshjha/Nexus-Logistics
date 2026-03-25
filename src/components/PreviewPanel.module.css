@@ -332,3 +332,38 @@
     position: static;
   }
 }
+
+@media (max-width: 600px) {
+  .panel {
+    padding: 18px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .orderId {
+    font-size: 1.3rem;
+  }
+
+  .route {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .routeArrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .cta {
+    font-size: 0.75rem;
+    padding: 14px 16px;
+  }
+
+  .estimate {
+    font-size: 0.6rem;
+  }
+}

@@ -159,8 +159,17 @@
   -moz-appearance: textfield;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .card {
+    padding: 14px;
+  }
+
   .row {
     grid-template-columns: 1fr;
+  }
+
+  .dimInput {
+    padding: 6px 4px;
+    font-size: 0.82rem;
   }
 }

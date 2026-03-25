@@ -117,7 +117,7 @@
   transform: rotate(45deg);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .options {
     grid-template-columns: 1fr;
   }

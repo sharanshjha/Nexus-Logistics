@@ -3,6 +3,7 @@
   padding: 0 24px 24px;
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* ---- Header ---- */
@@ -40,7 +41,7 @@
   align-items: start;
 }
 
-/* ---- Mobile ---- */
+/* ---- Tablet ---- */
 @media (max-width: 968px) {
   .wrapper {
     padding: 0 16px 16px;
@@ -49,5 +50,16 @@
   .grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 0 10px 12px;
+  }
+
+  .grid {
+    gap: 16px;
   }
 }
