@@ -1,0 +1,166 @@
+.card {
+  border: 1.5px solid #e4e4ec;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #d0cde6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #fff0f0;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+  background: #ffe0e0;
+}
+
+.label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #8a8a9a;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1.5px solid #e4e4ec;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+  background: #fff;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #5b4cff;
+  box-shadow: 0 0 0 3px rgba(91, 76, 255, 0.1);
+}
+
+/* ---- Rows ---- */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ---- Dimension inputs ---- */
+.dimRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1.5px solid #e4e4ec;
+  border-radius: 8px;
+  padding: 2px 4px;
+  transition: border-color 0.2s;
+}
+
+.dimRow:focus-within {
+  border-color: #5b4cff;
+  box-shadow: 0 0 0 3px rgba(91, 76, 255, 0.1);
+}
+
+.dimInput {
+  flex: 1;
+  padding: 8px 6px;
+  border: none;
+  outline: none;
+  font-size: 0.88rem;
+  color: #1a1a2e;
+  background: transparent;
+  text-align: center;
+  min-width: 0;
+}
+
+.dimSep {
+  color: #b0b0c0;
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+/* ---- Value input with ₹ prefix ---- */
+.valueInput {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #e4e4ec;
+  border-radius: 8px;
+  padding: 0 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #f7f7fb;
+}
+
+.valueInput:focus-within {
+  border-color: #5b4cff;
+  box-shadow: 0 0 0 3px rgba(91, 76, 255, 0.1);
+  background: #fff;
+}
+
+.currencySymbol {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #5b4cff;
+  margin-right: 4px;
+}
+
+.valueField {
+  flex: 1;
+  padding: 10px 6px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+  background: transparent;
+}
+
+/* Remove number spinners */
+.input[type='number']::-webkit-inner-spin-button,
+.input[type='number']::-webkit-outer-spin-button,
+.dimInput[type='number']::-webkit-inner-spin-button,
+.dimInput[type='number']::-webkit-outer-spin-button,
+.valueField[type='number']::-webkit-inner-spin-button,
+.valueField[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type='number'],
+.dimInput[type='number'],
+.valueField[type='number'] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

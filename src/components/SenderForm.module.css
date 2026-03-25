@@ -1,0 +1,88 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5b4cff;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #5b4cff;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #8a8a9a;
+  letter-spacing: 0.3px;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1.5px solid #e4e4ec;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #1a1a2e;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #5b4cff;
+  box-shadow: 0 0 0 3px rgba(91, 76, 255, 0.1);
+}
+
+.textarea {
+  padding: 10px 12px;
+  border: 1.5px solid #e4e4ec;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #1a1a2e;
+  background: #fff;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.textarea:focus {
+  border-color: #5b4cff;
+  box-shadow: 0 0 0 3px rgba(91, 76, 255, 0.1);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}

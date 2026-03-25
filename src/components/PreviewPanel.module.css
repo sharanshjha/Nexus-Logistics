@@ -1,0 +1,334 @@
+.panel {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 24px;
+}
+
+/* ---- Header ---- */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.previewLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #8a8a9a;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.orderId {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.date {
+  font-size: 0.82rem;
+  color: #8a8a9a;
+  margin-top: 4px;
+}
+
+/* ---- Badge ---- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badgeExpress {
+  background: #5b4cff;
+  color: #fff;
+}
+
+.badgeStandard {
+  background: #e8e8f0;
+  color: #6b6b80;
+}
+
+.badgeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* ---- Route ---- */
+.route {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: #f7f7fb;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.routePoint {
+  flex: 1;
+}
+
+.routeHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.routeDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.routeDotOrigin {
+  background: #5b4cff;
+}
+
+.routeDotDest {
+  background: #ff6b6b;
+}
+
+.routeLabel {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #8a8a9a;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.routeName {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-top: 2px;
+}
+
+.routeCity {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #5a5a70;
+}
+
+.routePin {
+  font-size: 0.75rem;
+  color: #8a8a9a;
+  margin-top: 2px;
+}
+
+.routeArrow {
+  font-size: 1.2rem;
+  color: #c0c0d0;
+  flex-shrink: 0;
+}
+
+/* ---- Manifest ---- */
+.manifest {
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #8a8a9a;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.manifestList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.manifestItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #f7f7fb;
+  border-radius: 10px;
+}
+
+.manifestIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e4ff;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.manifestInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.manifestName {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.manifestDims {
+  font-size: 0.7rem;
+  color: #8a8a9a;
+  margin-top: 2px;
+}
+
+.manifestValue {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  white-space: nowrap;
+}
+
+/* ---- Tags ---- */
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.tagFragile {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #5b4cff;
+  background: #f0eeff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.tagInsured {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #28a745;
+  background: #eaf7ed;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+/* ---- Divider ---- */
+.divider {
+  height: 1px;
+  background: #ececf2;
+  margin: 16px 0;
+}
+
+/* ---- Validation Errors ---- */
+.errors {
+  background: #fff5f5;
+  border: 1.5px solid #ffc9c9;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-top: 16px;
+  animation: shakeIn 0.4s ease;
+}
+
+@keyframes shakeIn {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+.errorItem {
+  font-size: 0.78rem;
+  color: #d63031;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ---- CTA ---- */
+.cta {
+  width: 100%;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #5b4cff, #7c6fff);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  transition: transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(91, 76, 255, 0.3);
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(91, 76, 255, 0.4);
+}
+
+.cta:active {
+  transform: translateY(0);
+}
+
+.ctaArrow {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* ---- Estimate ---- */
+.estimate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #8a8a9a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 14px;
+}
+
+.estimateIcon {
+  font-size: 0.85rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 968px) {
+  .panel {
+    position: static;
+  }
+}

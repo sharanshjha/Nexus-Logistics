@@ -1,0 +1,53 @@
+.wrapper {
+  min-height: 100vh;
+  padding: 0 24px 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ---- Header ---- */
+.header {
+  padding: 20px 0;
+  margin-bottom: 8px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoIcon {
+  font-size: 1.6rem;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.3px;
+}
+
+.logoText span {
+  color: #5b4cff;
+}
+
+/* ---- Grid ---- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 968px) {
+  .wrapper {
+    padding: 0 16px 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
